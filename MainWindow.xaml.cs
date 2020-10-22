@@ -22,7 +22,7 @@ namespace WeatherWPF
 
             using (WebClient client = new WebClient())
 
-                results = client.DownloadString("http://api.openweathermap.org/data/2.5/weather?q=cracow&appid=085f4e9a1bb01af375c061ffa74b3886&units=metric");
+                results = client.DownloadString("http://api.openweathermap.org/data/2.5/weather?q=krakow&appid=085f4e9a1bb01af375c061ffa74b3886&units=metric");
             dynamic weatherResults = JObject.Parse(results);
 
 

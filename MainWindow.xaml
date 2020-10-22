@@ -9,8 +9,8 @@
     <Grid Background="#FF153061">
         <TextBlock x:Name="TextBlockTemp" HorizontalAlignment="Left" Margin="70,145,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="203" Foreground="White" FontSize="100" FontWeight="Bold" FontStyle="Normal"/>
         <TextBlock x:Name="TextBlockCity" HorizontalAlignment="Left" Margin="172,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="468" FontSize="50" Foreground="#FF04A236" FontWeight="Bold"><Run Text="Pogoda "/><Run Language="pl-pl" Text="w"/><Run Text=" Krakowie"/><LineBreak/><Run/></TextBlock>
-        <TextBlock x:Name="TextBlockPressure" HorizontalAlignment="Left" Margin="522,188,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Foreground="White" FontSize="25"/>
-        <TextBlock x:Name="TextBlockHumidity" HorizontalAlignment="Left" Margin="522,245,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Foreground="White" FontSize="25"/>
-        <TextBlock x:Name="TextBlockVisibility" HorizontalAlignment="Left" Margin="522,304,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Foreground="White" FontSize="25"/>
+        <TextBlock x:Name="TextBlockPressure" HorizontalAlignment="Left" Margin="497,188,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="243" Foreground="White" FontSize="25"/>
+        <TextBlock x:Name="TextBlockHumidity" HorizontalAlignment="Left" Margin="497,245,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="243" Foreground="White" FontSize="25"/>
+        <TextBlock x:Name="TextBlockVisibility" HorizontalAlignment="Left" Margin="497,304,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="243" Foreground="White" FontSize="25"/>
     </Grid>
 </Window>
