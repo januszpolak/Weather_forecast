@@ -32,10 +32,12 @@ namespace WeatherWPF
             double visibility = weatherResults.visibility;
             string desc = weatherResults.weather[0].description;
 
-            TextBoxTemp.Text = temperature.ToString() + "°C";
-            TextBoxPressure.Text = "Ciśnienie: " + pressure.ToString() + " hPa";
-            TextBoxHumidity.Text = "Wilgotność: " + humidity.ToString() + " %";
-            TextBoxVisibility.Text = "Widoczność: " + visibility.ToString() + " m";
+            TextBlockTemp.Text = temperature.ToString() + "°C";
+            TextBlockPressure.Text = "Ciśnienie: " + pressure.ToString() + " hPa";
+            TextBlockHumidity.Text = "Wilgotność: " + humidity.ToString() + "%";
+            TextBlockVisibility.Text = "Widoczność: " + visibility.ToString() + "m";
+
+            
         }
 
       

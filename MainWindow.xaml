@@ -7,45 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF153061">
-        <TextBox x:Name="TextBoxTemp" HorizontalAlignment="Left" Margin="98,151,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="138" FontSize="100" FontWeight="Bold" Foreground="White">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="TextCity" HorizontalAlignment="Left" Margin="153,55,0,0" Text="Pogoda w Krakowie&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="479" Foreground="#FF8CA200" FontSize="50" Height="77" RenderTransformOrigin="0.505,-0.313" FontWeight="Bold">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="TextBoxPressure" HorizontalAlignment="Left" Margin="535,163,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.721,-1.131" FontSize="20" Foreground="White">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="TextBoxHumidity" HorizontalAlignment="Left" Margin="535,228,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.721,-1.131" FontSize="20" Foreground="White">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox x:Name="TextBoxVisibility" HorizontalAlignment="Left" Margin="535,294,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.721,-1.131" FontSize="20" Foreground="White">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
+        <TextBlock x:Name="TextBlockTemp" HorizontalAlignment="Left" Margin="70,145,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="203" Foreground="White" FontSize="100" FontWeight="Bold" FontStyle="Normal"/>
+        <TextBlock x:Name="TextBlockCity" HorizontalAlignment="Left" Margin="172,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="468" FontSize="50" Foreground="#FF04A236" FontWeight="Bold"><Run Text="Pogoda "/><Run Language="pl-pl" Text="w"/><Run Text=" Krakowie"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="TextBlockPressure" HorizontalAlignment="Left" Margin="522,188,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Foreground="White" FontSize="25"/>
+        <TextBlock x:Name="TextBlockHumidity" HorizontalAlignment="Left" Margin="522,245,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Foreground="White" FontSize="25"/>
+        <TextBlock x:Name="TextBlockVisibility" HorizontalAlignment="Left" Margin="522,304,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Foreground="White" FontSize="25"/>
     </Grid>
 </Window>
