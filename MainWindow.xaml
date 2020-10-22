@@ -1,0 +1,51 @@
+﻿<Window x:Class="WeatherWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF153061">
+        <TextBox x:Name="TextBoxTemp" HorizontalAlignment="Left" Margin="98,151,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="138" FontSize="100" FontWeight="Bold" Foreground="White">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="TextCity" HorizontalAlignment="Left" Margin="153,55,0,0" Text="Pogoda w Krakowie&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="479" Foreground="#FF8CA200" FontSize="50" Height="77" RenderTransformOrigin="0.505,-0.313" FontWeight="Bold">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="TextBoxPressure" HorizontalAlignment="Left" Margin="535,163,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.721,-1.131" FontSize="20" Foreground="White">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="TextBoxHumidity" HorizontalAlignment="Left" Margin="535,228,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.721,-1.131" FontSize="20" Foreground="White">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="TextBoxVisibility" HorizontalAlignment="Left" Margin="535,294,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.721,-1.131" FontSize="20" Foreground="White">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
