@@ -44,7 +44,30 @@ namespace WeatherWPF
             {
                 Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2017/02/07/01/59/cloud-2044797_960_720.png"));
             }
-
+            if (desc == "Mist")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2013/04/01/09/21/fog-98505_960_720.png"));
+            }
+            if (desc == "Clear")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2016/11/18/23/41/sun-1837376_960_720.png"));
+            }
+            if (desc == "Snow")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2014/04/02/10/46/snowflake-304521_960_720.png"));
+            }
+            if (desc == "Rain")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2013/07/13/12/47/drops-160354_960_720.png"));
+            }
+            if (desc == "Drizzle")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2013/07/12/14/49/drops-148870_960_720.png"));
+            }
+            if (desc == "Thunderstorm")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2012/05/07/02/12/thundercloud-47584_960_720.png"));
+            }
         }
 
       
