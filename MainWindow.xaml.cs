@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Net;
 using System.Windows;
@@ -20,12 +21,16 @@ namespace WeatherWPF
         }
         public void GetWeather()
         {
+            City city = new City();
+            var place = city.GetCity();
+
+
             string results;
 
 
             using (WebClient client = new WebClient())
 
-                results = client.DownloadString("http://api.openweathermap.org/data/2.5/weather?q=krakow&appid=085f4e9a1bb01af375c061ffa74b3886&units=metric");
+            results = client.DownloadString("http://api.openweathermap.org/data/2.5/weather?q="+place+"&appid=085f4e9a1bb01af375c061ffa74b3886&units=metric");
             dynamic weatherResults = JObject.Parse(results);
 
 
@@ -34,11 +39,14 @@ namespace WeatherWPF
             double humidity = weatherResults.main.humidity;
             double visibility = weatherResults.visibility;
             string desc = weatherResults.weather[0].main;
+            string cities = weatherResults.name;
 
             TextBlockTemp.Text = temperature.ToString() + "°C";
             TextBlockPressure.Text = "Ciśnienie: " + pressure.ToString() + " hPa";
             TextBlockHumidity.Text = "Wilgotność: " + humidity.ToString() + "%";
             TextBlockVisibility.Text = "Widoczność: " + visibility.ToString() + "m";
+
+            TextBlockCity.Text = cities;
 
 
 
@@ -48,6 +56,11 @@ namespace WeatherWPF
                 GridMain.Background = new ImageBrush(new BitmapImage(new Uri("https://cdn.pixabay.com/photo/2015/07/05/10/18/tree-832079_960_720.jpg")));
             }
             if (desc == "Mist")
+            {
+                Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2013/04/01/09/21/fog-98505_960_720.png"));
+                GridMain.Background = new ImageBrush(new BitmapImage(new Uri("https://cdn.pixabay.com/photo/2016/02/19/10/22/fog-1209205_960_720.jpg")));
+            }
+            if (desc == "Fog")
             {
                 Image.Source = new BitmapImage(new System.Uri("https://cdn.pixabay.com/photo/2013/04/01/09/21/fog-98505_960_720.png"));
                 GridMain.Background = new ImageBrush(new BitmapImage(new Uri("https://cdn.pixabay.com/photo/2016/02/19/10/22/fog-1209205_960_720.jpg")));
@@ -79,6 +92,45 @@ namespace WeatherWPF
             }
         }
 
-      
+        public class Ip
+        {
+            public string GetIp()
+            {
+                using (var wb = new WebClient())
+                {
+                    var res = wb.DownloadString("http://ip-api.com/json/");
+                    dynamic data = JsonConvert.DeserializeObject(res);
+                    var ip = data.query;
+                    return ip;
+                }
+            }
+        }
+
+        public class City : Ip
+        {
+            public string GetCity()
+            {
+
+
+                using (var wb = new WebClient())
+                {
+                    var ip = new Ip();
+                    var ipdata = ip.GetIp();
+                    var response = wb.DownloadString("http://ip-api.com/json/" + ipdata + "");
+
+
+                    dynamic data = JsonConvert.DeserializeObject(response);
+                    string city = data.city;
+
+                    return city;
+
+                   
+
+
+                }
+            }
+        }
     }
+    
+
 }
