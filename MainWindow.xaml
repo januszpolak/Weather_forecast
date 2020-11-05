@@ -5,18 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherWPF"
         mc:Ignorable="d"
-        Title="Weather in Cracow" ResizeMode="NoResize" Height="450" Width="800">
-    <Grid x:Name="GridMain" Background="#FF153061">
+        Title="Weather in Cracow" ResizeMode="NoResize" Height="550" Width="400">
+    <Grid x:Name="GridMain" Background="#FF180AA2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="478*"/>
             <ColumnDefinition Width="279*" MaxWidth="279" MinWidth="279"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="TextBlockTemp" HorizontalAlignment="Left" Margin="10,171,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="235" Foreground="White" FontSize="100" FontWeight="Bold" FontStyle="Normal" Grid.Column="1"/>
-        <TextBlock x:Name="TextBlockCity" HorizontalAlignment="Left" Margin="239,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="303" FontSize="50" Foreground="White" FontWeight="Bold" Grid.Column="1" Text="" RenderTransformOrigin="0.502,0.55" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="TextBlockPressure" HorizontalAlignment="Left" Margin="10,195,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="243" Foreground="White" FontSize="25" Grid.Column="2"/>
-        <TextBlock x:Name="TextBlockHumidity" HorizontalAlignment="Left" Margin="10,252,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="243" Foreground="White" FontSize="25" Grid.Column="2"/>
-        <TextBlock x:Name="TextBlockVisibility" HorizontalAlignment="Left" Margin="10,311,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="243" Foreground="White" FontSize="25" Grid.Column="2"/>
-        <Image x:Name="Image" HorizontalAlignment="Left" Height="108" Margin="296,212,0,0" VerticalAlignment="Top" Width="103" Grid.Column="1"/>
+        <TextBlock x:Name="TextBlockTemp" HorizontalAlignment="Left" Margin="80,85,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="220" Foreground="White" FontSize="120" FontWeight="Bold" FontStyle="Normal" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlockCity" HorizontalAlignment="Left" Margin="0,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="380" FontSize="35" Foreground="White" FontWeight="Bold" Text="" RenderTransformOrigin="0.502,0.55" Grid.ColumnSpan="2" Grid.Column="1" TextAlignment="Center">
+
+        </TextBlock>
+        <TextBlock x:Name="TextBlockPressure" HorizontalAlignment="Left" Margin="56,342,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="267" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlockHumidity" HorizontalAlignment="Left" Margin="56,399,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="267" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlockVisibility" HorizontalAlignment="Left" Margin="56,458,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="267" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" TextAlignment="Center"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="65" Margin="60,248,0,0" VerticalAlignment="Top" Width="61" Grid.Column="2"/>
     </Grid>
 </Window>
