@@ -12,7 +12,7 @@
             <ColumnDefinition Width="478*"/>
             <ColumnDefinition Width="279*" MaxWidth="279" MinWidth="279"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="TextBlockTemp" HorizontalAlignment="Left" Margin="80,85,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="220" Foreground="White" FontSize="120" FontWeight="Bold" FontStyle="Normal" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlockTemp" HorizontalAlignment="Left" Margin="51,85,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="201" Width="277" Foreground="White" FontSize="120" FontWeight="Bold" FontStyle="Normal" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlockCity" HorizontalAlignment="Left" Margin="0,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="380" FontSize="35" Foreground="White" FontWeight="Bold" Text="" RenderTransformOrigin="0.502,0.55" Grid.ColumnSpan="2" Grid.Column="1" TextAlignment="Center">
 
         </TextBlock>
