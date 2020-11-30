@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherWPF"
         mc:Ignorable="d"
-        Title="Weather in Cracow" ResizeMode="NoResize" Height="550" Width="400">
+        Title="Weather Forecast based on your IP" ResizeMode="NoResize" Height="550" Width="400">
     <Grid x:Name="GridMain" Background="#FF180AA2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
